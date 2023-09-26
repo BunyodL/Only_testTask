@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-content {
+    width: 1920px;
+    height: 1536px;
+    left: 0;
+    top: -83px;
+    z-index: -1;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    outline: 0;
+    border-radius: 50%;
+    opacity: 70%;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 15px 11px 15px;
+}
+
+.active-btn {
+    animation: active-button .5s linear;
+    width: 140px;
+    height: 38px;
+    border-radius: 40px;
+    gap: 15px;
+}
+
+.plus {
+    pointer-events: none;
+}
+
+.place-title {
+    pointer-events: none;
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.btn-1, .btn-2, .btn-5,
+.btn-6, .btn-7, .btn-9 {
+    background-color: #3877EE;
+    border-color: #3877EE;
+}
+
+.btn-3, .btn-4,
+.btn-8, .btn-10 {
+    background-color: #6ABF4B;
+    border-color: #6ABF4B;
+}
+
+.btn-1 {
+    top: 282px;
+    left: 580px;
+}
+
+.btn-2 {
+    top: 225px;
+    left: 1373px;
+}
+
+.btn-3 {
+    top: 482px;
+    left: 687px;
+}
+
+.btn-4 {
+    top: 404px;
+    left: 1148px;
+}
+
+.btn-5 {
+    top: 475px;
+    left: 1414px;
+}
+
+.btn-6 {
+    top: 714px;
+    left: 446px;
+}
+
+.btn-7 {
+    top: 629px;
+    left: 1081px;
+}
+
+.btn-8 {
+    top: 669px;
+    left: 1306px;
+}
+
+.btn-9 {
+    top: 713px;
+    left: 1593px;
+}
+
+.btn-10 {
+    top: 790px;
+    left: 1107px;
+}
+
+@keyframes active-button {
+    from {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+    }
+    to {
+        max-width: 140px;
+        height: 38px;
+        padding: 11px 15px 11px 15px;
+        border-radius: 40px;
+        gap: 15px;
+    }
+}
+
